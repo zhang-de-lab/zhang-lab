@@ -6,7 +6,7 @@
 # The mat folder is an example of what you need to run
 
 
-# python3.6  needed packages：numpy keras tensorflow scipy
+# environment： python3.6  needed packages：numpy keras tensorflow scipy
 
 
 # 2. Portal hypertension
