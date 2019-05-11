@@ -1,7 +1,7 @@
 # zhang-lab
 
-# 1. 骨质疏松
-# 运行updata中的main.py   其中path1为股骨颈mat文件的名字  path2为腰椎mat文件的名字
+# 1. Osteoporosis
+# 运行updata中的main.py   path2为腰椎mat文件的名字
 # mat文件夹里是运行所需的例子
 
 
@@ -9,4 +9,4 @@
 
 
 # 2. 门脉高压
-# 运行test.py
+# run test.py
