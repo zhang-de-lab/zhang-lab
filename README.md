@@ -1,12 +1,13 @@
 # zhang-lab
 
 # 1. Osteoporosis
-# 运行updata中的main.py   path2为腰椎mat文件的名字
-# mat文件夹里是运行所需的例子
+# run main.py
+# Path 2 is the name of the lumbar mat file
+# The mat folder is an example of what you need to run
 
 
-# 环境python3.6  需要包：numpy keras tensorflow scipy
+# python3.6  needed packages：numpy keras tensorflow scipy
 
 
-# 2. 门脉高压
+# 2. Portal hypertension
 # run test.py
