@@ -13,5 +13,4 @@ but not for commercy. And the web are updating consistently. If you have any que
 
 
 3. ccRCC_prognosis
-(1) This file contains the GUI of BFPS algorithm, deep CNN for deep feature extraction, and the pakages used for gene analysis
-(2) This file with size of 643M
+(1) This file contains the GUI of BFPS algorithm (available at https://1drv.ms/u/s!AnbmXaW9INvBgZwSL1jIDq4O7RR2eg), deep CNN for deep feature extraction, and the pakages used for gene analysis.
