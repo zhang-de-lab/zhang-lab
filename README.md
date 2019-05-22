@@ -1,4 +1,5 @@
-# The Zhang's lab aims to provide a model or GUI of algorithm for example and further studies. ALL of them are used just for# research, #but not for commercy. And the web are updating consistently. If you have any questions, do not hesitate to contact us! (E-mail: #843155331@qq.com, Zhenyuan Ning)
+# The Zhang's lab aims to provide a model or GUI of algorithm for example and further studies. ALL of them are used just for# research, 
+# but not for commercy. And the web are updating consistently. If you have any questions, do not hesitate to contact us! (E-mail: 843155331@qq.com, Zhenyuan Ning)
 
 # 1. Osteoporosis
 # run main.py
