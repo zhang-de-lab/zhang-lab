@@ -11,3 +11,9 @@
 
 # 2. Portal hypertension
 # run test.py
+
+
+
+# 3. ccRCC_prognosis
+# This file contains the GUI of BFPS algorithm, deep CNN for deep feature extraction, and the pakages used for gene analysis
+# This file with size of 643M
