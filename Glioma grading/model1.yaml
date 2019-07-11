@@ -1,0 +1,341 @@
+backend: tensorflow
+class_name: Sequential
+config:
+  layers:
+  - class_name: Conv3D
+    config:
+      activation: relu
+      activity_regularizer: null
+      batch_input_shape: !!python/tuple
+      - null
+      - 1
+      - 24
+      - 24
+      - 24
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_first
+      dilation_rate: !!python/tuple
+      - 1
+      - 1
+      - 1
+      dtype: float32
+      filters: 8
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomUniform
+        config:
+          maxval: 0.05
+          minval: -0.05
+          seed: null
+      kernel_regularizer:
+        class_name: L1L2
+        config:
+          l1: 0.0
+          l2: 0.009999999776482582
+      kernel_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      name: conv3d_1
+      padding: same
+      strides: !!python/tuple
+      - 1
+      - 1
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: Conv3D
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_first
+      dilation_rate: !!python/tuple
+      - 1
+      - 1
+      - 1
+      filters: 8
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: VarianceScaling
+        config:
+          distribution: uniform
+          mode: fan_avg
+          scale: 1.0
+          seed: null
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      name: conv3d_2
+      padding: same
+      strides: !!python/tuple
+      - 1
+      - 1
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: MaxPooling3D
+    config:
+      data_format: channels_first
+      name: max_pooling3d_1
+      padding: valid
+      pool_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      strides: !!python/tuple
+      - 2
+      - 2
+      - 2
+      trainable: true
+  - class_name: SpatialDropout3D
+    config:
+      name: spatial_dropout3d_1
+      noise_shape: null
+      rate: 0.2
+      seed: null
+      trainable: true
+  - class_name: Conv3D
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_first
+      dilation_rate: !!python/tuple
+      - 1
+      - 1
+      - 1
+      filters: 16
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomUniform
+        config:
+          maxval: 0.05
+          minval: -0.05
+          seed: null
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      name: conv3d_3
+      padding: same
+      strides: !!python/tuple
+      - 1
+      - 1
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: Conv3D
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_first
+      dilation_rate: !!python/tuple
+      - 1
+      - 1
+      - 1
+      filters: 16
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: VarianceScaling
+        config:
+          distribution: uniform
+          mode: fan_avg
+          scale: 1.0
+          seed: null
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      name: conv3d_4
+      padding: same
+      strides: !!python/tuple
+      - 1
+      - 1
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: MaxPooling3D
+    config:
+      data_format: channels_first
+      name: max_pooling3d_2
+      padding: valid
+      pool_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      strides: !!python/tuple
+      - 2
+      - 2
+      - 2
+      trainable: true
+  - class_name: SpatialDropout3D
+    config:
+      name: spatial_dropout3d_2
+      noise_shape: null
+      rate: 0.2
+      seed: null
+      trainable: true
+  - class_name: Conv3D
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_first
+      dilation_rate: !!python/tuple
+      - 1
+      - 1
+      - 1
+      filters: 32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomUniform
+        config:
+          maxval: 0.05
+          minval: -0.05
+          seed: null
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      name: conv3d_5
+      padding: same
+      strides: !!python/tuple
+      - 1
+      - 1
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: Conv3D
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      data_format: channels_first
+      dilation_rate: !!python/tuple
+      - 1
+      - 1
+      - 1
+      filters: 32
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: RandomUniform
+        config:
+          maxval: 0.05
+          minval: -0.05
+          seed: null
+      kernel_regularizer: null
+      kernel_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      name: conv3d_6
+      padding: same
+      strides: !!python/tuple
+      - 1
+      - 1
+      - 1
+      trainable: true
+      use_bias: true
+  - class_name: MaxPooling3D
+    config:
+      data_format: channels_first
+      name: max_pooling3d_3
+      padding: valid
+      pool_size: !!python/tuple
+      - 2
+      - 2
+      - 2
+      strides: !!python/tuple
+      - 2
+      - 2
+      - 2
+      trainable: true
+  - class_name: SpatialDropout3D
+    config:
+      name: spatial_dropout3d_3
+      noise_shape: null
+      rate: 0.2
+      seed: null
+      trainable: true
+  - class_name: Flatten
+    config:
+      data_format: channels_first
+      name: flatten_1
+      trainable: true
+  - class_name: Dense
+    config:
+      activation: relu
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: VarianceScaling
+        config:
+          distribution: uniform
+          mode: fan_avg
+          scale: 1.0
+          seed: null
+      kernel_regularizer: null
+      name: dense_1
+      trainable: true
+      units: 32
+      use_bias: true
+  - class_name: Dense
+    config:
+      activation: sigmoid
+      activity_regularizer: null
+      bias_constraint: null
+      bias_initializer:
+        class_name: Zeros
+        config: {}
+      bias_regularizer: null
+      kernel_constraint: null
+      kernel_initializer:
+        class_name: VarianceScaling
+        config:
+          distribution: uniform
+          mode: fan_avg
+          scale: 1.0
+          seed: null
+      kernel_regularizer: null
+      name: dense_2
+      trainable: true
+      units: 2
+      use_bias: true
+  name: sequential_1
+keras_version: 2.2.4
