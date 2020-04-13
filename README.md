@@ -16,5 +16,5 @@ but not for commercy. And the web are updating consistently. If you have any que
 (1) This file contains the GUI of BFPS algorithm (available at https://1drv.ms/u/s!AnbmXaW9INvBgZwSL1jIDq4O7RR2eg), deep CNN for deep feature extraction, and the pakages used for gene analysis.
 
 
-4. Glioma grading
+4. Glioma_grading
 (1) run main.py
